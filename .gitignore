@@ -15,8 +15,6 @@ config.status
 Makefile
 stamp-h1
 tk707.sh
-INSTALL
-INSTALL.txt
 *.texi
 *.info
 *.help
@@ -39,4 +37,3 @@ tcl2c
 texi2help
 title.tcl
 title_defs.tcl
-INSTALL

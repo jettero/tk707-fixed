@@ -308,7 +308,7 @@ usually @code{/usr/share/timidity}.
 
 For invoking Alsa sequencer interface, run @code{timidity} as follows:
 @example
-      timidity -iA -B2,8 -Os1l -s 44100 &
+      timidity -iA -B2,8 &
 @end example
 
 The fragment size can be adjustable.  The smaller number gives
@@ -321,10 +321,12 @@ Finally, run @code{tk707}:
 @end example
 
 The @code{timidity} render is very flexible and rich, since you
-can add any instrument in your library by using SF2 or GUS patch files.
-This modular approach is not always supported by all midi card hardware renders.
+can add any instrument in your library by using GUS patch files.
+This modular approach is not always supported by all hardware
+renders.
 Thus,  the software MIDI render solution is fruitful,
-and could be installed, even if you have a hardware or external MIDI solution.
+and could be installed, even if you have a hardware or 
+external MIDI solution.
 
 @c TO BE TESTED !!!
 @c ================
