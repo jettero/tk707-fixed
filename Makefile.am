@@ -48,9 +48,9 @@ tk707tcl_SOURCES  = util707.c util707.h element707.c playa.c \
 tcl2c_SOURCES     = tcl2c.c 
 texi2help_SOURCES = texi2help.l 
 
-tk707bin_LDFLAGS  = $(ALSA_LIBS)   $(TCLTK_LIBS)   $(X_LIBS)
-tk707tcl_LDFLAGS  = $(ALSA_LIBS)   $(TCLTK_LIBS)   $(X_LIBS)
-INCLUDES          = $(ALSA_CFLAGS) $(TCLTK_CFLAGS) $(X_CFLAGS)
+tk707bin_LDADD  = $(ALSA_LIBS)   $(TCLTK_LIBS)   $(X_LIBS)
+tk707tcl_LDADD  = $(ALSA_LIBS)   $(TCLTK_LIBS)   $(X_LIBS)
+INCLUDES = $(ALSA_CFLAGS) $(TCLTK_CFLAGS) $(X_CFLAGS)
 
 pkgdata_DATA      = 707.map 727.map 7b7.map 7c7.map \
 		    demo.dat son-montuno.dat carioca.dat \
