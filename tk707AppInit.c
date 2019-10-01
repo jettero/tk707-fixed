@@ -25,18 +25,10 @@
  *	use in wish and similar Tk-based applications.
  */
 
-#include <math.h>  /* for matherr() */
 #include "tk.h"
 
 extern int Init_tk707(Tcl_Interp *interp);
 extern int Init_tk707_Scripts(Tcl_Interp *interp);
-
-/*
- * The following variable is a special hack that is needed in order for
- * Sun shared libraries to be used for Tcl.
- */
-
-int *tclDummyMathPtr = (int *) matherr;
 
 #ifdef TK_TEST
 extern int		Tktest_Init _ANSI_ARGS_((Tcl_Interp *interp));
